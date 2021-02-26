@@ -81,6 +81,63 @@ index 0000000..e69de29
 giờ sửa file này :D mình nhập đến đây chưa Ctrl + S nên file chưa cập nhật
 giờ cập nhật rồi sau đó status nhé 
 
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+// đó modified màu đỏ kìa giờ ta cần xem có thay đổi gì thì dùng git diff
+
+7. git diff
+
+$ git diff
+diff --git a/README.md b/README.md
+index e69de29..bdf5b31 100644
+--- a/README.md
+diff --git a/README.md b/README.md
+index e69de29..bdf5b31 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,89 @@
++1. git init:
++
++$ git init // tại thư mục project mới
++
++2. git status
++xem trạng thái của project, ví dụ:
++
++$ git status
++On branch master // trên nhánh master
++
++No commits yet // chưa commit nào
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++        README.md      // file này chưa đc add
++
++nothing added to commit but untracked files present (use "git add" to track)
++
+:
+// vân vân....... nhấn Q để thoát
+// giờ vì file có thay đổi á nên cần add lại lần nữa
+// dùng git add . cho nhanh rồi dùng status kiểm tra
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+// chữ modified màu lục rồi nhé là ok rồi  giờ commit nũa
+ 
+$ git commit -m 'update readme'
+[master 561fc3f] update readme
+ 1 file changed, 89 insertions(+)
+
+// rồi đó
 
 
 
