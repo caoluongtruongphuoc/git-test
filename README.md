@@ -168,6 +168,14 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
+8. git checkout
+dùng để làm bỏ phần vừa thay đổi mà chưa commit
+ví dụ
+
+$git checkout -- README.md
+
+9. git reset
+
 
 
 
