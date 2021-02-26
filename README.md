@@ -137,7 +137,38 @@ $ git commit -m 'update readme'
 [master 561fc3f] update readme
  1 file changed, 89 insertions(+)
 
-// rồi đó
+// rồi đó giờ xem log nhé
+$ git log
+commit 561fc3f706904bf5be68852e0222873f1295ab48 (HEAD -> master)
+Author: caoluongtruongphuoc <caophong8991@gmail.com>
+Date:   Fri Feb 26 14:07:42 2021 +0700
+
+    update readme
+
+commit 26e1ec8c7e5e5f9ab596023bb933b0ac659f6e87
+Author: caoluongtruongphuoc <caophong8991@gmail.com>
+Date:   Fri Feb 26 13:49:03 2021 +0700
+
+    git-test hướng dẫn các kiểu cho newbie
+
+// giờ tạo file test mới trong thư mục rồi -->add --> commit nhé
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   file-test.txt
+
+$ git commit -m 'add file-test.txt and update readme'
+[master fbc0a8d] add file-test.txt and update readme
+ 2 files changed, 57 insertions(+)
+ create mode 100644 file-test.txt
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
 
 
 
