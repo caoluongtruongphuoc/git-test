@@ -245,6 +245,58 @@ Deleted branch feature/file-test (was f5a5c75).
 $ git branch
 * master
 
+-------------------------
+14. các chi tiết vể git reset
+git reset --soft <to_id_commit>
+git reset --mixed <to_id_commit>
+git reset --hard <to_id_commit>
+// mục đích commit nào ko vừa ý thì dùng lệnh quay lại
+chẳng hạn bạn vừa commit số 3 
+và như ngăn xếp như sau : 3 2 1
+bạn muốn hủy commit số 3 vừa xong thì 
+$ git reset --soft <id_commit số 2>
+còn commit số 1 quay về staging area
+$ git reset --mixed <id_commit số 2>
+thì commit số 1 quay về working directory
+$ git reset --hard <id_commit số 2> 
+thì quay về hẳn số 2 luôn, mọi thay đổi về sau biến mất 
+
+--------------------------
+15. git revert <commit>
+ý nghĩa hoàn lại trạng thái trc đó
+chẳng hạn bạn vừa viết dòng ko vừa ý
+dùng lệnh xóa dòng đó 
+thế khác j reset ??
+cái này bạn có thể hoàn nguyên lại cách vài commit trong quá khứ chứ ko phải chỉ commit mới nhất
+
+lệnh này sẽ tạo commit mới và hoàn nguyên code
+
+thế thì tốt nhất là sửa và tạo commit mới là tốt nhất
+
+16. .gitignore
+
+như tên git phớt lờ :D
+file này sẽ có trong project của bạn mục đích đặt các file muốn untrack vào
+các thay đổi vs git sẽ bỏ qua file nè : git status ko hiện nữa :D
+giờ tạo 2 file 
+test-gitignore.txt và .gitignore
+//
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        test-gitignore.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+giờ bạn ko muốn test-gitignore.txt trong repo của mình thì vào 
+.gitignore và gõ : test-gitignore.txt thế là xong
 
 
 
