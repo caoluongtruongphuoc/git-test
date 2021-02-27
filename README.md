@@ -169,12 +169,38 @@ On branch master
 nothing to commit, working tree clean
 
 8. git checkout
-dùng để làm bỏ phần vừa thay đổi mà chưa commit
+discard changes in working directory // loại bỏ các thay đổi trong thư mục làm việc 
 ví dụ
 
 $git checkout -- README.md
-
+// tương tự: $ git restore <file>
 9. git reset
+unstage // bỏ khỏi danh sách add 
+
+$ git reset HEAD README.md
+// hoặc dùng: $ git restore --staged <file>
+
+-------------------------
+10. git branch
+dùng để xem có nhánh nào rồi :D
+
+$ git branch
+* master
+
+11. git checkout -b <ten-branch>
+khi ta làm 1 project ví dụ là 1 web đi thì nó có nhiều page : about, product ... thì khi viết 1 chức năng nào đó ta thường tạo nhánh mới để ko ảnh hưởng đến nhánh master và khi ta vừa lòng vs các thay đổi ở nhánh thì lúc đó ta sẽ ghép nhánh đó vs nhánh master --> đảm bảo master luôn là bản ngon nhất ko có lỗi gì 
+ví dụ: cần thao tác vs chức năng file nào đó ta cần dùng git trên mà file thì là chưa add :D
+
+$ git checkout -b feature/file-test
+Switched to a new branch 'feature/file-test'
+
+// câu lệnh trên đồng thời 2 lệnh : tạo nhánh mới và chuyển sang nhánh mới làm việc-checkout
+
+$ git branch
+* feature/file-test     // dấu * nè đang ở nhánh feature/file-test
+  master
+
+// cái nhánh mới và master đều chỉ đến commit cuối cùng lúc tạo ra
 
 
 
