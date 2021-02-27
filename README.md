@@ -201,6 +201,9 @@ $ git branch
   master
 
 // cái nhánh mới và master đều chỉ đến commit cuối cùng lúc tạo ra
+// giờ chuyển sang nhánh master làm việc nào :D
+
+
 
 
 
