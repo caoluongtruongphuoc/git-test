@@ -202,6 +202,11 @@ $ git branch
 
 // cái nhánh mới và master đều chỉ đến commit cuối cùng lúc tạo ra
 // giờ chuyển sang nhánh master làm việc nào :D
+// các thay đổi cần commit mới chuyển nhánh dc
+
+$ git checkout master
+Switched to branch 'master'
+
 
 
 
