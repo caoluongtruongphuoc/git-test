@@ -207,6 +207,16 @@ $ git branch
 $ git checkout master
 Switched to branch 'master'
 
+mọi thay đổi ở file này lúc bên feature sang master đều biến mất
+ở nhánh này khi log có thể xem các commit tại nhánh và bên master 
+còn bên master chỉ có master thôi --> đảm bảo nhánh con ko ảnh hưởng đên nhánh chính. giờ thì cần hợp nhánh con vs chính nhé
+
+12. git merge
+giờ cần hợp B vào A
+đầu tiên bạn phải ở A nếu chưa dùng checkout A, của mình đang ở feature thì mới viết đc cái này: 
+
+
+
 
 
 
