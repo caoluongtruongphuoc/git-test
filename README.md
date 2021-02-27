@@ -214,6 +214,37 @@ còn bên master chỉ có master thôi --> đảm bảo nhánh con ko ảnh hư
 12. git merge
 giờ cần hợp B vào A
 đầu tiên bạn phải ở A nếu chưa dùng checkout A, của mình đang ở feature thì mới viết đc cái này: 
+$ git checkout master  // từ dòng này là đã merge
+$ git merge feature/file-test
+Updating 60637b5..f5a5c75
+Fast-forward
+ README.md     | 48 ++++++++++++++++++++++++++++++++++++++++++++++--
+ file-test.txt |  1 +
+ 2 files changed, 47 insertions(+), 2 deletions(-)
+
+// status
+commit f5a5c7514448405e1a22b80ada6cc3d51d5ce28f (HEAD -> master, feature/file-test)
+Author: caoluongtruongphuoc <caophong8991@gmail.com>
+Date:   Sat Feb 27 12:22:08 2021 +0700
+
+    update file readme line:210 ->  219
+// cmt hơi sai nhưng ok, giờ master chứa tất cả các commit của bên feature/file-test :D
+// giờ hợp nhất rồi thì branch kia có thể thừa nếu bạn ko dùng và muốn xóa đi
+
+13. git branch -D <ten-branch>
+
+// giờ đang có :
+$ git branch
+  feature/file-test
+* master
+
+//sau đó
+$ git branch -D feature/file-test
+Deleted branch feature/file-test (was f5a5c75).
+
+$ git branch
+* master
+
 
 
 
