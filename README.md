@@ -297,6 +297,27 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 giờ bạn ko muốn test-gitignore.txt trong repo của mình thì vào 
 .gitignore và gõ : test-gitignore.txt thế là xong
+// đó thấy chưa 
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+// nên ignore khi chưa commit bao giờ ko thì fix mệt 
+
+--------------------------
+đó bấy h ta mới thao tác trên local repo 
+giờ cần up lên remote repo
+$ git remote add origin https://github.com/caoluongtruongphuoc/git-test.git
+
 
 
 
