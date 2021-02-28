@@ -317,6 +317,52 @@ no changes added to commit (use "git add" and/or "git commit -a")
 đó bấy h ta mới thao tác trên local repo 
 giờ cần up lên remote repo
 $ git remote add origin https://github.com/caoluongtruongphuoc/git-test.git
+để kêt nối vs remote repo
+// chi tiết ?? 
+$ git remote -v
+origin  https://github.com/caoluongtruongphuoc/git-test.git (fetch)
+origin  https://github.com/caoluongtruongphuoc/git-test.git (push)
+
+// nếu đã từng push rồi thì 
+$ git push
+nếu mà lần đầu thì có lỗi
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+// nếu lần đầu 
+$ git push -u origin master
+thì 
+$ git push -u origin master
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (38/38), 6.58 KiB | 374.00 KiB/s, done.
+Total 38 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/caoluongtruongphuoc/git-test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+----------------------------------------
+// nếu lần đầu tham gia vào dự án bạn cần tải toàn bộ thì dùng
+$ git clone 
+
+// nếu bạn đã clone rồi và cần cập nhật dùng 
+$ git pull
+
+-----------------------------------------
+pull request (pull - kéo | push - đẩy)
+qui trình lm vc trong team 
+1. git checkout -b <feature_branch> // trc khi vào việc đc giao tạo nhánh mới nhé sau đó hẵng làm gì thì lm
+2. git push origin <branch> // lm các kiểu rồi thì branch vẫn chỉ tại local thôi giờ push nó lên github luôn
+3. create a  pull request on GitHub
+4. review code
+5. merge to master
+
+
 
 
 
