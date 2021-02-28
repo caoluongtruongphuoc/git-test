@@ -359,7 +359,16 @@ qui trình lm vc trong team
 1. git checkout -b <feature_branch> // trc khi vào việc đc giao tạo nhánh mới nhé sau đó hẵng làm gì thì lm
 2. git push origin <branch> // lm các kiểu rồi thì branch vẫn chỉ tại local thôi giờ push nó lên github luôn
 3. create a  pull request on GitHub
+// nếu bạn muốn branch mới ghép vs master thì dùng pull request
+// master pull subbranch về
+// mục đích giúp các thành viên khác có thể review code của bạn _ bc 4
+// nếu thấy ok leader sẽ chấp nhận merge vs nhánh của bạn _ bc 5 
 4. review code
+  4.1. review code online github
+  4.2. fetch branch into local to test offline (optional)
+    $ git fetch origin <branch>
+    $ git checkout <branch>
+  4.3. approve pull request
 5. merge to master
 
 
