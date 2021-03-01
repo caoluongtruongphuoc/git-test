@@ -370,6 +370,12 @@ qui trình lm vc trong team
     $ git checkout <branch>
   4.3. approve pull request
 5. merge to master
+-------------------------------------------------------
+Resolve(giải quyết) conflict(cuộc xung đột) sử dụng rebase
+khi nào có :
+- thay đổi cùng file, cùng dòng --> dùng git rebase
+
+- A xóa file X, B thay đổi file X --> dùng merge
 
 
 
